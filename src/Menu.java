@@ -14,7 +14,7 @@ public class Menu extends JFrame {
     private JLabel algLabel, anzahlLabel, tempoLabel;
     private JLabel vergleicheLabel, vergleiche;
     private JPanel angabenTogetherPanel, angabenPanel, buttonPanel;
-    private JButton sortButton, infoButton, shuffleButton;
+    private JButton sortButton, infoButton;
     private JTextArea cases;
     FlowLayout fl = new FlowLayout();
     Bubblesort b = new Bubblesort();
@@ -56,7 +56,6 @@ public class Menu extends JFrame {
 
 
         infoButton = new JButton("info cases");
-        shuffleButton = new JButton("shuffle Array");
         sortButton = new JButton("sorting");
 
 
@@ -71,10 +70,9 @@ public class Menu extends JFrame {
         angabenPanel.add(vergleiche);
 
 
-        buttonPanel = new JPanel(new GridLayout(3, 1));
+        buttonPanel = new JPanel(new GridLayout(2, 1));
         buttonPanel.add(infoButton);
         buttonPanel.add(sortButton);
-        buttonPanel.add(shuffleButton);
 
 
         angabenTogetherPanel = new JPanel(new FlowLayout());
